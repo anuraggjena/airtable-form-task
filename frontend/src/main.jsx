@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
-import "./app.css";
 
 import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
