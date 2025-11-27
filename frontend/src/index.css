@@ -1,0 +1,189 @@
+/* ===========================
+   GLOBAL RESET & BASE
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0d0d0d;
+  color: white;
+  line-height: 1.6;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.center-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.navbar {
+  width: 100%;
+  background: rgba(10, 10, 10, 0.82);
+  border-bottom: 1px solid #222;
+  padding: 18px 40px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+}
+
+.nav-left {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4f8bff;
+}
+
+.nav-right a,
+.nav-right button {
+  margin-left: 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.25s;
+}
+
+.nav-right a:hover {
+  color: #4f8bff;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: 0.25s;
+}
+
+.btn-primary {
+  background: #4f8bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #3577ff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #666;
+  color: white;
+}
+
+.btn-outline:hover {
+  border-color: #fff;
+}
+
+/* ===========================
+   FORM ELEMENTS
+=========================== */
+
+input, select, textarea {
+  width: 100%;
+  background: #151515;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #4f8bff;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card {
+  background: #141414;
+  border: 1px solid #222;
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 26px;
+}
+
+/* ===========================
+   HEADINGS & SPACING
+=========================== */
+
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+/* ===========================
+   FIELD DRAG ITEM
+=========================== */
+
+.field-item {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.field-item:hover {
+  border-color: #4f8bff;
+}
+
+/* ===========================
+   SKELETON LOADER
+=========================== */
+
+.skeleton {
+  background: #222;
+  animation: shimmer 1.4s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0% { opacity: .4; }
+  50% { opacity: 1; }
+  100% { opacity: .4; }
+}
